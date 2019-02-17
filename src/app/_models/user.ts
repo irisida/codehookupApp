@@ -11,7 +11,7 @@ export interface User {
   photoUrl: String;
   city: String;
   country: String;
-  interests?: String;
+  bio?: String;
   introduction?: String;
   lookingFor?: String;
   photos: Photo[];

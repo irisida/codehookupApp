@@ -19,23 +19,8 @@ export class MemberDetailComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.loadUser();
-  }
-
-  /**
-   * The reason for the plus below is that the id is expected to
-   * be of number type but actually is of sring type, adding the
-   * + to the parameter here forces it to be taken as a number
-   * instead of a string.
-   */
-  loadUser() {
-    this.userService.getUser(+this.route.snapshot.params['id']).subscribe(
-      (user: User) => {
-        this.user = user;
-      },
-      error => {
-        this.alertify.error(error);
-      }
-    );
+    this.route.data.subscribe(data => {
+      this.user = data['user'];
+    });
   }
 }

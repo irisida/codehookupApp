@@ -4,3 +4,60 @@
 @import '../node_modules/font-awesome/css/font-awesome.min.css';
 @import '../node_modules/alertifyjs/build/css/alertify.min.css';
 @import '../node_modules/alertifyjs/build/css/themes/bootstrap.min.css';
+
+/**
+ * The below applies to the tabbed panel of the
+ * member details view. It overrides the tabset
+ * styles provided.
+ */
+
+.tab-panel {
+  padding-top: px;
+  border: 1px solid #1e4349;
+  padding: 10px;
+  /* border-radius: 4px; */
+}
+
+.nav-tabs > li.open,
+.member-tabset > .nav-tabs > li:hover {
+  /* border-bottom: 4px solid #fbcdcf; */
+}
+
+.member-tabset > .nav-tabs > li.open > a,
+.member-tabset > .nav-tabs > li:hover > a {
+  border: 0;
+  background: none !important;
+  color: #3ecfda;
+}
+
+.member-tabset > .nav-tabs > li.open > a > i,
+.member-tabset > .nav-tabs > li:hover > a > i {
+  color: #4b9490;
+}
+
+.member-tabset > .nav-tabs > li.open .dropdown-menu,
+.member-tabset > .nav-tabs > li:hover .dropdown-menu {
+  /* margin-top: 0px; */
+}
+
+.member-tabset > .nav-tabs > li.active {
+  border-bottom: 4px solid #e95420;
+  position: relative;
+}
+
+.member-tabset > .nav-tabs > li.active > a {
+  border: 0 !important;
+  color: #3ecfda;
+}
+
+.member-tabset > .nav-tabs > li.active > a > i {
+  color: #3ecfda;
+}
+
+.member-tabset > .tab-content {
+  margin-top: -3px;
+  color: #408e94;
+  border: 0;
+  border-top: 1px solid #eee;
+  padding: 15px 0;
+}

@@ -1,5 +1,8 @@
 <div class="container mt-4">
   <div class="row">
+    <h1>{{ user.knownAs }}'s Profile</h1>
+  </div>
+  <div class="row">
     <!-- Left side panel of the page  -->
     <div class="col-sm-4">
       <div class="card">
@@ -49,7 +52,7 @@
             <p>{{ user.bio }}</p>
           </tab>
           <tab heading="Photos">
-            <p>photos will go here</p>
+            <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
           </tab>
           <tab heading="Messages">
             <p>Messages will go here</p>
